@@ -4,11 +4,11 @@ $(document).ready(function () {
 
     setInterval(function() { 
       $('#imageGallery > div:first')
-        .fadeOut(1000)
+        .fadeOut(0)
         .next()
         .fadeIn(1000)
         .end()
         .appendTo('#imageGallery');
-    },  3000);
+    },  3500);
 
 }); 
