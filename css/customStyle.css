@@ -3,7 +3,11 @@ INDEX
 *************************************************************/
 
 .container {
-    max-width: 830px;
+    max-width: 800px;
+}
+
+#clickMe {
+    width: 90px; 
 }
 
 

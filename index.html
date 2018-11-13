@@ -14,6 +14,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/customStyle.css">
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/favicon.ico"/>
+
 </head>
 
 <body class="bg-primary">
@@ -21,8 +24,12 @@
         <div class="mt-5">
             <img class="img-fluid" src="/images/indexImage-min.png" alt="Arnold & Dusty">
         </div>
-        <div>
-            <p class="text-center mt-0"><a href="livingRoom.html" class="text-warning">Take a look inside</a></p>
+        <div class="text-center">
+            <img id="clickMe" src="/images/button-min.png" alt="Button" usemap="#buttonMap">
+
+            <map name="buttonMap">
+                <area shape="circle" coords="45, 45, 37" href="livingRoom.html" alt="Living Room Link">
+            </map>
         </div>
     </div>
 
