@@ -18,6 +18,8 @@ LIVING ROOM
 #livingRoom-body {
     background-image: url("/images/background-min.png");
     background-position: center;
+
+    background-color: rgb(112, 174, 199); 
 }
 
 #livingRoom-div {
@@ -54,4 +56,47 @@ GALLERY
 .photo {
     margin: 0 auto; 
 
+}
+
+/************************************************************* 
+ADPOD
+*************************************************************/
+
+.apod {
+    height: 100%;
+    width: 100%;  
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    background-size: cover;
+    z-index: -2;
+
+    background-image: url("/images/earth-min.jpg"); 
+}
+
+/* desert background */
+#apodBG {
+    width: 100%; 
+    position: fixed; 
+    left: 0; 
+    bottom: 0;  
+    z-index: -1;
+}
+
+#arnold-div,
+#dusty-div {
+    width: 150px; 
+    margin: 0;
+    position: fixed; 
+}
+
+/* Arnold starting position */
+#arnold-div {
+    position: fixed;
+    top: 200px;  
+    right: 50px;
+}
+
+.spaceDog-img {
+    width: 100%; 
 }
