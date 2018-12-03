@@ -55,7 +55,6 @@ GALLERY
 
 .photo {
     margin: 0 auto; 
-
 }
 
 /************************************************************* 
@@ -71,7 +70,7 @@ ADPOD
     background-size: cover;
     z-index: -2;
 
-    background-image: url("/images/earth-min.jpg"); 
+    /* background-image: url("/images/earth-min.jpg");  */
 }
 
 /* desert background */
