@@ -89,11 +89,42 @@ ADPOD
     position: fixed; 
 }
 
+/* dusty spin */
+#dusty-div {
+    animation-name: dustySpin;
+    animation-duration: 30000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes dustySpin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
 /* Arnold starting position */
 #arnold-div {
     position: fixed;
     top: 200px;  
     right: 50px;
+
+    animation-name: arnoldSpin;
+    animation-duration: 100000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes arnoldSpin {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
 }
 
 .spaceDog-img {
