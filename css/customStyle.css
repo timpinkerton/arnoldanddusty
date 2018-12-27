@@ -167,3 +167,26 @@ PSOP
 #psop-body {
     background-image: linear-gradient(dodgerblue, lightskyblue);
 }
+
+#airplane-container {
+    border: 1px solid brown; 
+}
+
+#airplane-container {
+    position: relative;
+}
+
+#airplane {
+    width: 500px;
+    border: 1px solid red;  
+}
+
+.passenger {
+    width: 5px;
+    position: absolute; 
+    top: 70;
+    left: 50;
+    
+    z-index: -1;
+
+}
