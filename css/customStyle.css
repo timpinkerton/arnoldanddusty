@@ -174,19 +174,22 @@ PSOP
 
 #airplane-container {
     position: relative;
+
+    top: 200px;
+    left:20px;
 }
 
 #airplane {
-    width: 500px;
+    width: 900px;
     border: 1px solid red;  
 }
 
 .passenger {
     width: 5px;
     position: absolute; 
-    top: 70;
-    left: 50;
+    top: 145;
+    left: 130;
     
-    z-index: -1;
+    /* z-index: -1; */
 
 }
