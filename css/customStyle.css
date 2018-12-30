@@ -169,10 +169,8 @@ PSOP
 }
 
 #airplane-container {
-    border: 1px solid brown; 
-}
 
-#airplane-container {
+    border: 1px solid yellow; 
     position: relative;
 
     top: 200px;
@@ -184,12 +182,50 @@ PSOP
     border: 1px solid red;  
 }
 
-.passenger {
-    width: 5px;
-    position: absolute; 
-    top: 145;
-    left: 130;
-    
-    /* z-index: -1; */
+.passenger-container {
 
+    display: flex;
+
+    border: 1px solid green;     
+    width: 185px;
+    height: 40px;
+    position: absolute; 
+    top: 155;
+    left: 130;
+
+}
+
+.passengers {
+    height: 100%;
+
+    justify-content: space-between; 
+    
+    margin: 0 5px; 
+}
+
+.image-source-link {
+	color: #98C3D1;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	/* ideally, transition speed should match zoom duration */
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
 }
