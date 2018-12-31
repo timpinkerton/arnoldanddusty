@@ -186,13 +186,21 @@ PSOP
 
     display: flex;
 
-    border: 1px solid green;     
+    /* border: 1px solid green;      */
     width: 185px;
     height: 40px;
     position: absolute; 
     top: 155;
-    left: 130;
+    left: 36;
 
+}
+
+#pilot {
+
+    /* border: 1px solid blue;  */
+    height: 74%;
+    margin-left: 0; 
+    margin-right: 50px;
 }
 
 .passengers {
@@ -211,7 +219,7 @@ PSOP
 .mfp-with-zoom.mfp-bg {
 	opacity: 0;
 	-webkit-backface-visibility: hidden;
-	/* ideally, transition speed should match zoom duration */
+	/*transition speed should match zoom duration */
 	-webkit-transition: all 0.3s ease-out; 
 	-moz-transition: all 0.3s ease-out; 
 	-o-transition: all 0.3s ease-out; 
