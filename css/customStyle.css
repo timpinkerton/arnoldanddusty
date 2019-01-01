@@ -118,11 +118,7 @@ ADPOD
     left: 50px;
 
     /* dusty spin */
-    animation-name: dustySpin;
-    animation-duration: 30000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: alternate;
+    
 }
 
 @keyframes dustySpin {
@@ -169,12 +165,23 @@ PSOP
 }
 
 #airplane-container {
-
+ 
     border: 1px solid yellow; 
     position: relative;
 
-    top: 200px;
-    left:20px;
+    top: 100px;
+
+    animation-name: flyingPlane;
+    animation-duration: 10000ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+}
+
+@keyframes flyingPlane {
+
+    from { top: 510; left: 0; }
+    to { top: 80; left: 50px; }
 }
 
 #airplane {
@@ -200,7 +207,12 @@ PSOP
     /* border: 1px solid blue;  */
     height: 74%;
     margin-left: 0; 
-    margin-right: 50px;
+}
+
+#pilot,
+#passenger-6,
+#passenger-13 {
+    margin-right: 60px;
 }
 
 .passengers {
