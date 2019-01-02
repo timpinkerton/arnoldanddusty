@@ -118,7 +118,11 @@ ADPOD
     left: 50px;
 
     /* dusty spin */
-    
+    animation-name: dustySpin;
+    animation-duration: 30000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
 }
 
 @keyframes dustySpin {
@@ -164,9 +168,105 @@ PSOP
     background-image: linear-gradient(dodgerblue, lightskyblue);
 }
 
+.clouds {
+    position: absolute; 
+    z-index: -1;
+
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    animation-direction: normal; 
+}
+
+#cloud1 {
+    top: 10;
+    left: -620;
+    animation-name: cloud1Float;
+    animation-duration: 25000ms;
+}
+
+@keyframes cloud1Float {
+    to {top: 10; left: 1200}
+}
+
+#cloud2 {
+    top: 50;
+    left: -1220;
+    
+    animation-name: cloud2Float;
+    animation-duration: 34000ms;
+}
+
+@keyframes cloud2Float {
+    to {top: 50; left: 1200}
+}
+
+#cloud3 {
+    top: 120;
+    left: -420;
+    animation-name: cloud3Float;
+    animation-duration: 26000ms;
+}
+
+@keyframes cloud3Float {
+    to {top: 120; left: 1200}
+}
+
+#cloud4 {
+    top: 180;
+    left: -920;
+    animation-name: cloud4Float;
+    animation-duration: 33000ms;
+}
+
+@keyframes cloud4Float {
+    to {top: 180; left: 1200}
+}
+
+#cloud5 {
+    top: 250;
+    left: -720;
+    animation-name: cloud5Float;
+    animation-duration: 27000ms;
+}
+
+@keyframes cloud5Float {
+    to {top: 250; left: 1200}
+}
+
+#cloud6 {
+    top: 300;
+    left: -820;
+    animation-name: cloud6Float;
+    animation-duration: 32000ms;
+}
+
+@keyframes cloud6Float {
+    to {top: 300; left: 1200}
+}
+
+#cloud7 {
+    top: 340;
+    left: -420;
+    animation-name: cloud7Float;
+    animation-duration: 25000ms;
+}
+
+@keyframes cloud7Float {
+    to {top: 340; left: 1200}
+}
+
+#cloud8 {
+    top: 410;
+    left: -1120;
+    animation-name: cloud8Float;
+    animation-duration: 40000ms;
+}
+
+@keyframes cloud8Float {
+    to {top: 410; left: 1200}
+}
+
 #airplane-container {
- 
-    /* border: 1px solid yellow;  */
     position: relative;
 
     top: 100px;
@@ -186,25 +286,18 @@ PSOP
 
 #airplane {
     width: 900px;
-    /* border: 1px solid red;   */
 }
 
 .passenger-container {
-
     display: flex;
-
-    /* border: 1px solid green;      */
     width: 185px;
     height: 40px;
     position: absolute; 
     top: 155;
     left: 36;
-
 }
 
 #pilot {
-
-    /* border: 1px solid blue;  */
     height: 74%;
     margin-left: 0; 
 }

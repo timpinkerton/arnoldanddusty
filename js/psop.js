@@ -8,7 +8,7 @@ $(document).ready(function() {
 		image: {
 			verticalFit: true,
 			titleSrc: function(item) {
-				return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
+				// return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
 			}
 		},
 		gallery: {
@@ -16,7 +16,7 @@ $(document).ready(function() {
 		},
 		zoom: {
 			enabled: true,
-			duration: 300, // don't foget to change the duration also in CSS
+			duration: 300, //match duration in CSS
 			opener: function(element) {
 				return element.find('img');
 			}
