@@ -28,6 +28,9 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="/images/favicon.ico" />
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+
 </head>
 
 <body class="bg-primary">
@@ -57,21 +60,55 @@
 
     <div class="container">
 
-        <div class="mt-5">
-            <img class="img-fluid" src="/images/indexImage-min.png" alt="Arnold & Dusty">
+        <div class="row">
+            <div class="mt-5">
+                <img class="img-fluid" src="/images/AandDBBMasks-min.png" alt="Arnold & Dusty">
+            </div>
+        </div>
+
+        <div id="covidStats" class="row">
+
+            <div id="earthDiv" class="col-2">
+                <img class="earthImg" src="/images/covidEarthonFire-min.png" alt="the world">
+            </div>
+
+            <div class="stats col-9">
+                <div class="row justify-content-center">
+                    <p id="date"></p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <p id="confirmed"></p>
+                    <img class="statIcon" src="/images/002-fever.png" alt="sick person">
+                </div>
+
+                <div class="row justify-content-center">
+                    <p id="deaths"></p>
+                    <img class="statIcon" src="/images/001-tombstone.png" alt="tombstone">
+                </div>
+
+                <div class="row justify-content-center">
+                    <p id="recovered"></p>
+                    <img class="statIcon " src="/images/003-winner.png" alt="winner">
+                </div>
+
+            </div>
+
         </div>
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script type="text/JavaScript" src="/js/covid.js "></script>
+
 
 </body>
 

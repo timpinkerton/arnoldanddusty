@@ -28,6 +28,37 @@ INDEX
     max-width: 800px;
 }
 
+#covidStats {
+    margin-top: 20px;
+}
+
+#earthDiv {
+    /* border: 1px solid red; */
+}
+
+.earthImg {
+    width: 110px;
+    height: 110px;
+}
+
+.stats {
+    /* border: 1px solid greenyellow; */
+    font-family: 'Fira Code', monospace;
+    font-size: .7em;
+    margin: auto 0;
+    color: yellow;
+}
+
+#date {
+    font-size: 1.1em;
+}
+
+.statIcon {
+    width: 1.1em;
+    height: 1.1em;
+    margin-left: 12px;
+}
+
 
 /************************************************************* 
 LIVING ROOM
